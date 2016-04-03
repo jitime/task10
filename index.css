@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: #BFBFBF;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#container>div{
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+#child1{
+    height: 120px;
+    border: 1px solid #F00;
+    order: 1;
+}
+
+#child2{
+    height: 100px;
+    border: 1px solid #F00;
+    order: 1;
+}
+
+#child3{
+    height: 40px;
+    border: 1px solid #F00;
+    order: 1;
+}
+
+#child4{
+    height: 200px;
+    border: 1px solid #00F;
+    order: 1;
+}
+
+@media all and (max-width: 640px){
+    #container{
+        flex-flow: row wrap;
+        align-content: flex-start;
+    }
+
+    #child4{
+        order: 0;
+    }
+}
